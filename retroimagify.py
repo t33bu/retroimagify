@@ -22,7 +22,6 @@ imagename = ''
 resize = True
 
 # Function to read selected system palette from a file
-# array = [[int(x) for x in line.split()] for line in f]
 def read_palette(name):
 	f = open(name + '.txt','r')
 	res = [int(r,16) for r in f.readline().split(',')]
