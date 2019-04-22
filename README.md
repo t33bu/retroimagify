@@ -1,5 +1,5 @@
 # retroimagify
-Convert your images to the 80's retro computer look with this Python script.
+Convert your images to the 80's retro computer look with this Python 3 script.
 
 The algorithm used to convert colors is the "low-cost approximation" algorithm as presented [here](https://www.compuphase.com/cmetric.htm).
 
