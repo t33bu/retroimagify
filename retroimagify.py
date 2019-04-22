@@ -64,6 +64,8 @@ imagename = sys.argv[-1]
 im = Image.open(imagename)
 if resize == True:
 	im = im.resize(resolution,Image.ANTIALIAS)
+else:
+	resolution = im.size
 pixels = im.load()
 
 # Run the transformation
