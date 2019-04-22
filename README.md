@@ -9,12 +9,12 @@ Original image [Itsukushima Gate](https://en.wikipedia.org/wiki/Itsukushima_Shri
 
 ## Command line options:
 
-**-o \<system name>** where you need to input the name of output system. The system must have corresponding <system_name>.txt file that describes its screen resolution and color palette.
+**-o \<system name>** where you need to input the name of output system. The system must have corresponding <system_name>.txt file that describes its screen resolution and color palette. For example _-o bbcm_ converts to the screen resolution and color palette of BBC Micro. 
   
 **-noresize** to retain the original dimensions of the image.
 
 ### Example usage:
-python retroimagify.py -noresize -o c64 image.png
+_python retroimagify.py -noresize -o c64 image.png_
 
 ## Palette file format
 
