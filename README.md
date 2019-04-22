@@ -31,3 +31,4 @@ ff,55,ff
 ff,ff,ff
 ```
 
+This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/)
