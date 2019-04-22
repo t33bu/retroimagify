@@ -1,7 +1,7 @@
 # retroimagify
-Convert your images to the 80's retro computer look with this Python 3 script. The algorithm used to convert colors is the "low-cost approximation" algorithm as presented [here](https://www.compuphase.com/cmetric.htm).
+Convert your images to the 80's retro computer look with this Python 3 script. The algorithm used to convert colors is the "low-cost approximation" algorithm as presented [here](https://www.compuphase.com/cmetric.htm). This project does not consider attribute clash, etc, just converts the colors. 
 
-The currently supported retrocomputers (their palettes and resolutions) are the following:
+The currently supported retrocomputers (their palettes and resolutions) are the following ..and some others. 
 ![CSupported retro systems](https://github.com/t33bu/retroimagify/blob/master/Itsukushima.png)
 Original image [Itsukushima Gate](https://en.wikipedia.org/wiki/Itsukushima_Shrine#/media/File:Itsukushima_Gate.jpg) by Jordy Meow (CC BY-SA 3.0). The palettes are retrieved from free [Lospec Palette List](https://lospec.com/palette-list).
 
