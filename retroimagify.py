@@ -17,10 +17,12 @@ from PIL import Image
 retro_system = ''
 resolution = []
 palette = []
-imagename = ''
+image_name = ''
 # Use target system resolution?
 resize = True
+# Convert the image into grayscale?
 grayScale = False
+
 # Function to read selected system palette from a file
 def read_palette(name):
 	f = open(name + '.txt','r')
@@ -60,10 +62,11 @@ if '-noresize' in sys.argv:
 
 if '-g' in sys.argv:
 	grayScale = True
-imagename = sys.argv[-1]
+	
+image_name = sys.argv[-1]
 
 # Open image
-im = Image.open(imagename)
+im = Image.open(image_name)
 if resize == True:
 	im = im.resize(resolution,Image.ANTIALIAS)
 else:
@@ -73,15 +76,15 @@ pixels = im.load()
 # Run the transformation
 for x in range(im.size[0]):
 	os.system('cls')
-	print('Converting',imagename,'to',retro_system,'with resolution',resolution,'...')
+	print('Converting',image_name,'to',retro_system,'with resolution',resolution,'...')
 	print(x+1,'/',im.size[0])
 	for y in range(im.size[1]):
 		pixels[x,y] = convert_color(pixels[x,y])
 
 if grayScale: 
-	im.convert('LA')
+	im = im.convert('LA')
 
 # Save as new image
-new_image = imagename.split('.')[0] + '_' + retro_system + '.png'
+new_image = image_name.split('.')[0] + '_' + retro_system + '.png'
 print('Saving as',new_image, "...")
 im.save(new_image)
