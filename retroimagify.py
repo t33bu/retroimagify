@@ -2,7 +2,8 @@
 # retroimagify.py
 # 
 # Created on: 21.4.2019
-# Author: Teemu Leppänen (tjlepp@gmail.com)
+# Original author: t33bu (Teemu Leppänen, tjlepp@gmail.com)
+# New features: ch0eeb 
 #
 # This work is licensed under Creative Commons
 # Attribution-NonCommercial-ShareAlike (CC BY-NC-SA 4.0)
@@ -26,9 +27,9 @@ grayScale = False
 # Function to read selected system palette from a file
 def read_palette(name):
 	f = open(name + '.txt','r')
-	res = [int(r,16) for r in f.readline().split(',')]
+	res = [int(r,16) for r in f.readline().strip().split(',')]
 	li = f.readlines()
-	pal = [tuple([int(c,16) for c in l.split(',')]) for l in li]
+	pal = [tuple([int(c,16) for c in l.strip().split(',')]) for l in li]
 	f.close()
 	return res, pal
 
