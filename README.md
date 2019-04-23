@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # retroimagify
+=======
+# retroimagify FORK.
+
+This software is not written by me. I have merely implemented an additional feature to it.
+
+>>>>>>> 7af2e1630751702f34da4d149edf05408330f50d
 Convert your images to the 80's retro computer look with this Python 3 script. The algorithm used to convert colors is the "low-cost approximation" algorithm as presented [here](https://www.compuphase.com/cmetric.htm). This project does not consider attribute clash, etc, just converts the colors. 
 
 The currently supported retrocomputers (their palettes and resolutions) are the following ..and some others. 
@@ -13,6 +20,11 @@ Original image [Itsukushima Gate](https://en.wikipedia.org/wiki/Itsukushima_Shri
   
 **-noresize** to retain the original dimensions of the image.
 
+<<<<<<< HEAD
+=======
+**-g** convert stated style of image to grayscale.
+
+>>>>>>> 7af2e1630751702f34da4d149edf05408330f50d
 ### Example usage:
 _python retroimagify.py -noresize -o c64 image.png_
 

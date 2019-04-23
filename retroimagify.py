@@ -20,7 +20,7 @@ palette = []
 imagename = ''
 # Use target system resolution?
 resize = True
-
+grayScale = False
 # Function to read selected system palette from a file
 def read_palette(name):
 	f = open(name + '.txt','r')
@@ -58,6 +58,8 @@ else:
 if '-noresize' in sys.argv:
 	resize = False
 
+if '-g' in sys.argv:
+	grayScale = True
 imagename = sys.argv[-1]
 
 # Open image
@@ -76,7 +78,10 @@ for x in range(im.size[0]):
 	for y in range(im.size[1]):
 		pixels[x,y] = convert_color(pixels[x,y])
 
+if grayScale: 
+	im.convert('LA')
+
 # Save as new image
 new_image = imagename.split('.')[0] + '_' + retro_system + '.png'
 print('Saving as',new_image, "...")
-im.save(new_image) 
+im.save(new_image)
