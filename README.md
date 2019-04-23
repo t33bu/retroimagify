@@ -1,4 +1,7 @@
-# retroimagify
+# retroimagify FORK.
+
+This software is not written by me. I have merely implemented an additional feature to it.
+
 Convert your images to the 80's retro computer look with this Python 3 script. The algorithm used to convert colors is the "low-cost approximation" algorithm as presented [here](https://www.compuphase.com/cmetric.htm). This project does not consider attribute clash, etc, just converts the colors. 
 
 The currently supported retrocomputers (their palettes and resolutions) are the following ..and some others. 
@@ -12,6 +15,8 @@ Original image [Itsukushima Gate](https://en.wikipedia.org/wiki/Itsukushima_Shri
 **-o \<system name>** where you need to input the name of output system. The system must have corresponding <system_name>.txt file that describes its screen resolution and color palette. For example _-o bbcm_ converts to the screen resolution and color palette of BBC Micro. 
   
 **-noresize** to retain the original dimensions of the image.
+
+**-g** convert stated style of image to grayscale.
 
 ### Example usage:
 _python retroimagify.py -noresize -o c64 image.png_
