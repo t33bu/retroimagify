@@ -21,11 +21,11 @@ _python retroimagify.py -noresize -o c64 image.png_
 
 ## Palette file format
 
-The first line is the screen resolution: width,height
+The first line is the screen resolution: _width,height_
 
-The following lines contain the RGB value of a color per line: r,g,b
+The following lines contain the RGB value of a color per line: _R,G,B_
 
-Hexadecimal numbers are used
+Hexadecimal numbers are used.
 ```
 140,c8      # screen resoution
 00,00,00    # colors...
